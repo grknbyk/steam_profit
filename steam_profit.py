@@ -305,10 +305,11 @@ def searchGames():
                 return
             _id = game.get("data-ds-appid")
             if _id in [x[0] for x in SETTINGS["games"]]:
-                return
+                continue
             price = game.find("div", {"class": "col search_price_discount_combined responsive_secondrow"})["data-price-final"]
             price = int(price)
             if price >  int(spinbox.get())*100:
+                show_info_label("Process finished.")
                 return
             title = game.find("span", {"class": "title"}).text
             try:
@@ -324,7 +325,7 @@ def searchGames():
                 SETTINGS["games"].append([_id, title, price, -404, -404,-404,-404])
             totalGamesLabel.config(text=str(len(SETTINGS["games"])))
             time.sleep(delay)
-    show_info_label("Process finished.")
+    
 
 def start_finding():
     Thread(target=searchGames).start()
