@@ -309,8 +309,8 @@ def searchGames():
             price = game.find("div", {"class": "col search_price_discount_combined responsive_secondrow"})["data-price-final"]
             price = int(price)
             if price >  int(spinbox.get())*100:
+                toggle_button_clicked()
                 show_info_label("Process finished.")
-                IS_STARTED = False
                 return
             title = game.find("span", {"class": "title"}).text
             try:
