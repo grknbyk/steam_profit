@@ -1,3 +1,3 @@
 # steam_profit
-
-web scraping from steam using queries
+web scraper tkinter gui application
+web scraping from steam using queries 
