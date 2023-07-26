@@ -310,6 +310,7 @@ def searchGames():
             price = int(price)
             if price >  int(spinbox.get())*100:
                 show_info_label("Process finished.")
+                IS_STARTED = False
                 return
             title = game.find("span", {"class": "title"}).text
             try:
