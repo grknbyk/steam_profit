@@ -306,7 +306,6 @@ def searchGames():
             _id = game.get("data-ds-appid")
             if _id in [x[0] for x in SETTINGS["games"]]:
                 continue
-            print(game)
             price = game.find("div", {"class": "discount_block search_discount_block"})["data-price-final"]
             price = int(price)
             if price >  int(spinbox.get())*100:
