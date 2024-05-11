@@ -3,7 +3,17 @@
 Steam Profit is a simple Python tool for analyzing the profitability of games on the Steam market. It utilizes the Steam open API to scrape game data and provide quick insights into potential profitability. <br>
 ### Recent Update
 Due to a currency change on Steam (USD for Turkey), the tool's effectiveness in identifying profitable opportunities has been compromised. <br>
+
+#### Used Libraries
+tkinter <br>
+requests <br>
+beautifulsoup4 <br>
+
+## Screenshot
+![Screenshot](https://github.com/grknbyk/steam_profit/blob/main/stmprft.png)
+
 <br>
+
 ### How to use?
 1. **Open the App**: Run the provided Python script or open the executable file
 
@@ -20,10 +30,5 @@ Due to a currency change on Steam (USD for Turkey), the tool's effectiveness in 
 
 
 
-#### Used Libraries
-tkinter <br>
-requests <br>
-beautifulsoup4 <br>
 
-## Screenshot
-![Screenshot](https://github.com/grknbyk/steam_profit/blob/main/stmprft.png)
+
